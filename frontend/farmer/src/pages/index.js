@@ -6,8 +6,7 @@ import Signin from "./Signin/Signin";
 import Signup from "./Signup/Signup";
 import Seller from "./Seller/Seller";
 import Buyer from "./Buyer/Buyer";
-
-
+import MainSplash from "./MainSplash/MainSplash";
 
 export {
 About,
@@ -17,8 +16,7 @@ Layout,
 Signin,
 Signup,
 Seller,
-Buyer
-
-
+Buyer,
+MainSplash
 
 };

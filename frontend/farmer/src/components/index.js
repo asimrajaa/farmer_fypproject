@@ -12,7 +12,10 @@ import Homeinformation from "./HomeInformation/Homeinformation";
 import Modechoose from "./modechoose/modechoose";
 import Customerlogos from "./Customerlogos/Customerlogos";
 import Contactus from "./Contactusform/Contactus";
-
+import Homefacilities from "./Homefacilities/Homefacilities";
+import BestSellingproduct from "./BestSellingproducts/BestSellingproduct";
+import Rating from "./Rating/Rating";
+import Productcard from "./Productcard/Productcard";
 
 
 
@@ -30,6 +33,11 @@ Numberstats,
 Homeinformation,
 Modechoose,
 Customerlogos,
-Contactus
+Contactus,
+Homefacilities,
+BestSellingproduct,
+Rating,
+Productcard
+
 
 };

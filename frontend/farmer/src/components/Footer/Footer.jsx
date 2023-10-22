@@ -3,7 +3,7 @@ import {images} from "../../constants"
 
 const Footer = () => {
   return (
-    <footer className="bg-white dark:bg-gray-900">
+    <footer className="bg-green-100 dark:bg-gray-900">
     <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
@@ -16,12 +16,20 @@ const Footer = () => {
               <div>
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
+
+                      <li className="mb-4">
+                          <a href="#" className="hover:underline">Pakistan Agriculture</a>
+                      </li>
+                      <li className="mb-4">
+                          <a href="#" className="hover:underline">Farmer assosiation</a>
+                      </li>
+                      <li className="mb-4">
+                          <a href="#" className="hover:underline">World agriculture</a>
+                      </li>
                       <li className="mb-4">
                           <a href="#" className="hover:underline">Farmer</a>
                       </li>
-                      <li>
-                          <a href="#" className="hover:underline">Pakistan Agriculture</a>
-                      </li>
+                      
                   </ul>
               </div>
               <div>

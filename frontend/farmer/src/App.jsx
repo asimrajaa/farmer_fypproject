@@ -11,6 +11,7 @@ import {
   About,
   Seller,
   Buyer,
+  MainSplash
 } from "./pages";
 
 const App = () => {
@@ -18,12 +19,13 @@ const App = () => {
     <>
       <BrowserRouter>
         <Routes>
+        <Route path="/" element={<MainSplash/>}></Route>
           <Route path="/" element={<Layout />}>
             <Route element={<PrivateComponent />}>
               <Route path="/seller" element={<Seller />}></Route>
               <Route path="/buyer" element={<Buyer />}></Route>
             </Route>
-            <Route index element={<Home />}></Route>
+            <Route path="/home"element={<Home />}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="/contact" element={<Contact />}></Route>
             <Route path="/login" element={<Signin />}></Route>
