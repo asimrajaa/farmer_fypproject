@@ -37,7 +37,7 @@ const Signin = () => {
 
             localStorage.setItem("user", JSON.stringify(fetchapi.data));
 
-            navigate('/');
+            navigate('/home');
         }
         else {
             alert("Please enter correct credentials");

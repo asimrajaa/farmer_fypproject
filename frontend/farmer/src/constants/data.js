@@ -83,7 +83,7 @@ const awards = [
 
 const navlinks=[
   {
-    id: "",
+    id: "home",
     title: "Home",
   },
   {

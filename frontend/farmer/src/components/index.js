@@ -16,6 +16,9 @@ import Homefacilities from "./Homefacilities/Homefacilities";
 import BestSellingproduct from "./BestSellingproducts/BestSellingproduct";
 import Rating from "./Rating/Rating";
 import Productcard from "./Productcard/Productcard";
+import Producttable from "./Producttable/Producttable";
+import Searchbar from "./Searchbar/Searchbar";
+import Buyerheading from "./Buyerheading/Buyerheading";
 
 
 
@@ -37,7 +40,10 @@ Contactus,
 Homefacilities,
 BestSellingproduct,
 Rating,
-Productcard
+Productcard,
+Producttable,
+Searchbar,
+Buyerheading
 
 
 };
