@@ -5,8 +5,11 @@ import Layout from "./Layout/Layout";
 import Signin from "./Signin/Signin";
 import Signup from "./Signup/Signup";
 import Seller from "./Seller/Seller";
+
 import Buyer from "./Buyer/Buyer";
 import MainSplash from "./MainSplash/MainSplash";
+import Dashboard from "./dashboard_profile/Dashboard";
+import Admin from "./Admin/Admin";
 
 export {
 About,
@@ -17,6 +20,9 @@ Signin,
 Signup,
 Seller,
 Buyer,
-MainSplash
+MainSplash,
+Dashboard,
+Admin
+
 
 };

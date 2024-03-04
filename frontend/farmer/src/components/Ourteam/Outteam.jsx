@@ -21,7 +21,7 @@ const Outteam = () => {
           <div className="text-center text-gray-500 dark:text-gray-400">
               <img className="mx-auto mb-4 w-36 h-36 rounded-full" src={images.man} alt="Michael Avatar"></img>
               <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <a href="#">John Mark</a>
+                  <a href="#">Naveed Khan Kapoor</a>
               </h3>
               <p>Software Engineer</p>
              
@@ -29,7 +29,7 @@ const Outteam = () => {
           <div className="text-center text-gray-500 dark:text-gray-400">
               <img className="mx-auto mb-4 w-36 h-36 rounded-full" src={images.man} alt="Neil Avatar"></img>
               <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <a href="#">Johnson Wood</a>
+                  <a href="#">Sardar Usama</a>
               </h3>
               <p>Software Engineer</p>
              

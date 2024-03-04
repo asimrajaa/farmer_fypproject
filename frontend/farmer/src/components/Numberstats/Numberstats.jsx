@@ -11,7 +11,7 @@ const Numberstats = () => {
               <dd className="font-light text-gray-500 dark:text-gray-400">Buyers</dd>
           </div>
           <div className="flex flex-col items-center justify-center">
-              <dt className="mb-2 text-3xl md:text-4xl font-extrabold">1B+</dt>
+              <dt className="mb-2 text-3xl md:text-4xl font-extrabold">2B+</dt>
               <dd className="font-light text-gray-500 dark:text-gray-400">Sellers</dd>
           </div>
           <div className="flex flex-col items-center justify-center">

@@ -11,7 +11,9 @@ import {
   About,
   Seller,
   Buyer,
-  MainSplash
+  Dashboard,
+  MainSplash,
+  Admin
 } from "./pages";
 
 const App = () => {
@@ -30,6 +32,8 @@ const App = () => {
             <Route path="/contact" element={<Contact />}></Route>
             <Route path="/login" element={<Signin />}></Route>
             <Route path="/register" element={<Signup />}></Route>
+            <Route path="/dashboard" element={<Dashboard />}></Route>
+            <Route path="/admin"element={<Admin />}></Route>
           </Route>
         </Routes>
       </BrowserRouter>

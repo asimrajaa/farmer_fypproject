@@ -5,10 +5,10 @@ import Searchbar from '../Searchbar/Searchbar'
 const Producttable = () => {
     return (
         <div>
-            <section className="bg-gray-50 dark:bg-gray-900 py-3 sm:py-5 flex justify-center content-center">
-                <div className="px-4 mx-auto max-w-screen-2xl lg:px-12">
+             <section className="bg-gray-50 dark:bg-gray-900 py-3 sm:py-5 flex justify-center content-center">
+                <div className="px-4 mx-auto max-w-screen-2xl lg:px-12 ">
                     <div className="relative overflow-hidden bg-white shadow-md dark:bg-gray-800 sm:rounded-lg">
-                        <div className="flex flex-col px-4 py-3 space-y-3 lg:flex-row lg:items-center lg:justify-between lg:space-y-0 lg:space-x-4">
+                        <div className="flex flex-col sm:flex-row px-4 py-3 space-y-3 lg:flex-row lg:items-center lg:justify-between lg:space-y-0 lg:space-x-4">
                             <div className="flex items-center flex-1 space-x-4">
                                 <h5>
                                     <span className="text-gray-500">All Products:</span>
@@ -52,7 +52,14 @@ const Producttable = () => {
                                     </tr>
                                 </thead>
                                 <tbody >
-                                    <tr className=" border-b dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 p-4">
+
+                                    <tr className="border-b dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 p-4">
+                                        <td><Productcard /></td>
+                                    </tr>
+                                    <tr className="border-b dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 p-4">
+                                        <td><Productcard /></td>
+                                    </tr>
+                                {/*     <tr className="border-b dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 p-4">
                                         <td><Productcard /></td>
                                     </tr>
                                     <tr className="border-b dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 p-4">
@@ -60,19 +67,10 @@ const Producttable = () => {
                                     </tr>
                                     <tr className="border-b dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 p-4">
                                         <td><Productcard /></td>
-                                    </tr>
-                                    <tr className="border-b dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 p-4">
-                                        <td><Productcard /></td>
-                                    </tr>
-                                    <tr className="border-b dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 p-4">
-                                        <td><Productcard /></td>
-                                    </tr>
-                                    <tr className="border-b dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 p-4">
-                                        <td><Productcard /></td>
-                                    </tr>
+                                   </tr>  */}
 
                                 </tbody>
-                            </table>
+                            </table> 
                         </div>
                         <nav className="flex flex-col items-start justify-between p-4 space-y-3 md:flex-row md:items-center md:space-y-0" aria-label="Table navigation">
                             <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
@@ -85,7 +83,7 @@ const Producttable = () => {
                         </nav>
                     </div>
                 </div>
-            </section>
+            </section> 
 
 
         </div>

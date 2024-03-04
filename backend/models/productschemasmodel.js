@@ -6,10 +6,13 @@ const mongoose= require('mongoose')
 const productschema= new mongoose.Schema(
   
     {
-        name:String,
+        productname:String,
         price:String,
+        stock:String,
+        location:String,
+        productdescription:String,
         category:String,
-        userid:String
+        userid:mongoose.Schema.Types.ObjectId
     }
 
 );

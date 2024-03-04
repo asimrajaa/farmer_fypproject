@@ -5,8 +5,8 @@ const Navbar = () => {
   const [toggleMenuprofile, setToggleMenuprofile] = useState(false);
   const [toggleMenudropdown, setToggleMenudropdown] = useState(false);
   let auth = localStorage.getItem("user");
-  const navigate= useNavigate();
-  const logout= function() {
+  const navigate = useNavigate();
+  const logout = function () {
     console.log("logout called")
     localStorage.clear();
     navigate('/login');
@@ -55,6 +55,22 @@ const Navbar = () => {
                 <span className="block text-sm  text-gray-500 truncate dark:text-gray-400">
                   asim@raja.com
                 </span>
+
+              </div>
+
+              <div className='px-4 '>
+                <ul className="py-2" aria-labelledby="user-menu-button">
+                  {data.profilelinks.map((navname, index) => (
+                    <li key={index}>
+                      <Link
+                        className="block py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                        to={`${navname.id}`}>
+                        {navname.title}
+                      </Link>
+
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
             <button
@@ -102,20 +118,20 @@ const Navbar = () => {
                 </li>
               ))}
               <li>
-                {console.log("Authentication"+auth)}
-              {auth ?
-                <Link onClick={logout}
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-green-700 md:hover:bg-transparent md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                  to="/home">
-                  Logout
-                </Link>
-                :
-                <Link
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-green-700 md:hover:bg-transparent md:hover:text-green-700md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                  to="/login">
-                  Login
-                </Link>}
-                </li>
+                {console.log("Authentication" + auth)}
+                {auth ?
+                  <Link onClick={logout}
+                    className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-green-700 md:hover:bg-transparent md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    to="/home">
+                    Logout
+                  </Link>
+                  :
+                  <Link
+                    className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-green-700 md:hover:bg-transparent md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    to="/login">
+                    Login
+                  </Link>}
+              </li>
             </ul>
           </div>
         </div>

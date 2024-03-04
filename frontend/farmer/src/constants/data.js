@@ -108,13 +108,10 @@ const navlinks=[
 
 const profilelinks=[
   {
-    id: "#dashboard",
+    id: "dashboard",
     title: "Dashboard",
   },
-  {
-    id: "#settings",
-    title: "Settings",
-  },
+
   {
     id: "#signout",
     title: "Signout",

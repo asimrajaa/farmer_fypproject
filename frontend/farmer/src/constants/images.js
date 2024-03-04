@@ -8,6 +8,9 @@ import buying from '../assets/buying.jpg';
 import man from '../assets/man.jpg';
 import tractorharvesting from '../assets/tractorharvesting.jpg';
 import bringing from '../assets/bringing.jpg';
+import easypaisa_image from '../assets/easypaisa_image.jpg';
+import jazzcash from '../assets/jazzcash.jpg';
+import bank from '../assets/bank.png';
 
 
 export default {
@@ -21,6 +24,11 @@ export default {
   buying,
   man,
   tractorharvesting,
-  bringing
+  bringing,
+  easypaisa_image,
+  jazzcash,
+  bank
+
+
 
 };
