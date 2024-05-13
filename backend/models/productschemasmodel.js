@@ -12,7 +12,9 @@ const productschema= new mongoose.Schema(
         location:String,
         productdescription:String,
         category:String,
-        userid:mongoose.Schema.Types.ObjectId
+        userID:String,
+        image:String,
+        rating:String
     }
 
 );
