@@ -249,6 +249,16 @@ const fruitsAndVegetables = [
     productdescription: 'Colorful and fresh bell peppers',
     category: 'Vegetable',
     rating: 4.3
+  },
+  {
+    _id: '10',
+    productname: 'Orange',
+    price: '1000 Rs',
+    stock: '400 dozens',
+    location: 'Local Farm',
+    productdescription: 'Colorful and fresh bell peppers',
+    category: 'Fruit',
+    rating: 4.3
   }
 ];
 

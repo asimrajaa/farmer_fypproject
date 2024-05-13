@@ -198,14 +198,14 @@ app.post("/send-email", (req, res) => {
     service: "gmail",
     host: "smtp.gmail.email",
     auth: {
-      user: "your-email@gmail.com",
-      pass: "your-password",
+      user: "kapoornaveedkhan@gmail.com",
+      pass: "kapoornaveedkhan@662001",
     },
   });
 
   const mailOptions = {
-    from: "your_email@gmail.com",
-    to: "recipient_email@example.com",
+    from: "kapoornaveedkhan@gmail.com",
+    to: "asim.rapidev12@gmail.com",
     subject: "New Contact Form Submission",
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
   };
@@ -446,7 +446,7 @@ app.post("/authenticate", async (req, res) => {
         secret: username,
       },
       {
-        headers: { "private-key": "4e65096f-b72b-4445-8c33-bf08fad6001f" },
+        headers: { "private-key": "85a868a3-0731-402a-b6ef-984a5969e43f" },
       }
     );
     console.log("reponse is: " + response);

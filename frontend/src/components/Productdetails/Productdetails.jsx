@@ -205,6 +205,23 @@ const Productdetails = ({ isOpen, closeDrawer, product }) => {
             </label>
           </div>
 
+
+          <div className="mb-6 flex items-center">
+            <label
+              for="title"
+              className="mr-4 text-sm font-bold font-medium text-gray-900 dark:text-white"
+            >
+              Price:{" "}
+            </label>
+            <label
+              for="title"
+              className="text-sm font-medium text-gray-900 dark:text-white"
+            >
+              {product.price}
+            </label>
+          </div>
+
+
           <div className="mb-6 flex items-center">
             <label
               for="title"

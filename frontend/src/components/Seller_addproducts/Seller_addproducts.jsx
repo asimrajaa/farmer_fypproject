@@ -153,7 +153,7 @@ const Seller_addproducts = ({ onDisableselleraddproduct }) => {
 
                                 <div className="col-span-2 sm:col-span-1 flex flex-col items-start ">
                                     <label for="price" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Price</label>
-                                    <input type="number" value={price} onChange={(e) => { setprice(e.target.value) }} name="price" id="price" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="$2999" required=""></input>
+                                    <input type="text" value={price} onChange={(e) => { setprice(e.target.value) }} name="price" id="price" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="$2999" required=""></input>
                                 </div>
 
 
@@ -170,7 +170,7 @@ const Seller_addproducts = ({ onDisableselleraddproduct }) => {
 
                                 <div className="col-span-2 sm:col-span-1 flex flex-col items-start ">
                                     <label for="stock" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Stock</label>
-                                    <input value={stock} onChange={(e) => { setstock(e.target.value) }} type="number" name="stock" id="stock" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="25k" required=""></input>
+                                    <input value={stock} onChange={(e) => { setstock(e.target.value) }} type="text" name="stock" id="stock" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="25k" required></input>
                                 </div>
 
                                 <div className="col-span-2 flex flex-col items-start ">
@@ -180,7 +180,7 @@ const Seller_addproducts = ({ onDisableselleraddproduct }) => {
                                 <div className="col-span-2 flex flex-col items-start ">
                                     <label for="description" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Product Image</label>
                                     <input type="file" accept="image/*" // Allow only image files 
-                                        onChange={handleFileInputChange} name="imagefile" id="imagefile" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Upload Image" required=""></input>
+                                        onChange={handleFileInputChange} name="imagefile" id="imagefile" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Upload Image" required></input>
 
                                     {selectedFile && (
                                         <div>
@@ -190,6 +190,7 @@ const Seller_addproducts = ({ onDisableselleraddproduct }) => {
                                                 src={URL.createObjectURL(selectedFile)}
                                                 alt="Selected"
                                                 style={{ maxWidth: '200px', maxHeight: '200px' }}
+                                                required
                                             />
                                         </div>
                                     )}
