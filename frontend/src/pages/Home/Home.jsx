@@ -9,12 +9,12 @@ const Home = () => {
     <div className=" bg-green-100 min-h-screen">
 
       <Hero/>
-      <Numberstats/>
+      {/* <Numberstats/> */}
       <Homeinformation/>
       <Modechoose/>
       <Homefacilities/>
       <BestSellingproduct/>
-      <Customerlogos/>
+      {/* <Customerlogos/> */}
       
 
   </div>

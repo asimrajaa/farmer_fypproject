@@ -149,7 +149,7 @@ const sliderimagesdata=[
 ]
 
 
-const fruitsAndVegetables = [
+const fruitsAndVegetables_punjabmarket = [
   {
     _id: '1',
     productname: 'Apple',
@@ -262,4 +262,313 @@ const fruitsAndVegetables = [
   }
 ];
 
-export default { wines, cocktails, awards, navlinks, profilelinks, sliderimagesdata, fruitsAndVegetables};
+const fruitsAndVegetables_sindhmarket = [
+  {
+    _id: '1',
+    productname: 'Mango',
+    price: 2.99,
+    stock: 120,
+    location: 'Local Orchard',
+    productdescription: 'Sweet and juicy mangoes',
+    category: 'Fruit',
+    rating: 4.8
+  },
+  {
+    _id: '2',
+    productname: 'Pineapple',
+    price: 1.49,
+    stock: 60,
+    location: 'Tropical Farm',
+    productdescription: 'Tangy and fresh pineapples',
+    category: 'Fruit',
+    rating: 4.5
+  },
+  {
+    _id: '3',
+    productname: 'Cucumber',
+    price: 0.59,
+    stock: 190,
+    location: 'Local Farm',
+    productdescription: 'Crisp and cool cucumbers',
+    category: 'Vegetable',
+    rating: 4.1
+  },
+  {
+    _id: '4',
+    productname: 'Cauliflower',
+    price: 1.35,
+    stock: 110,
+    location: 'Farmers Market',
+    productdescription: 'Fresh and tender cauliflower',
+    category: 'Vegetable',
+    rating: 4.3
+  },
+  {
+    _id: '5',
+    productname: 'Banana',
+    price: 1.79,
+    stock: 70,
+    location: 'Local Farm',
+    productdescription: 'Sweet and refreshing watermelons',
+    category: 'Fruit',
+    rating: 4.6
+  },
+  {
+    _id: '6',
+    productname: 'Eggplant',
+    price: 0.99,
+    stock: 130,
+    location: 'Farmers Market',
+    productdescription: 'Rich and flavorful eggplants',
+    category: 'Vegetable',
+    rating: 4.0
+  },
+  {
+    _id: '7',
+    productname: 'Peach',
+    price: 2.29,
+    stock: 80,
+    location: 'Local Orchard',
+    productdescription: 'Juicy and sweet peaches',
+    category: 'Fruit',
+    rating: 4.7
+  },
+  {
+    _id: '8',
+    productname: 'Zucchini',
+    price: 1.79,
+    stock: 100,
+    location: 'Farmers Market',
+    productdescription: 'Fresh and tender zucchinis',
+    category: 'Vegetable',
+    rating: 4.2
+  },
+  {
+    _id: '9',
+    productname: 'Pomegranate',
+    price: 2.49,
+    stock: 50,
+    location: 'Local Farm',
+    productdescription: 'Sweet and tart pomegranates',
+    category: 'Fruit',
+    rating: 4.5
+  },
+  {
+    _id: '10',
+    productname: 'Green Beans',
+    price: 1.49,
+    stock: 120,
+    location: 'Farmers Market',
+    productdescription: 'Crisp and fresh green beans',
+    category: 'Vegetable',
+    rating: 4.3
+  }
+];
+
+const fruitsAndVegetables_balochmarket = [
+  {
+    _id: '1',
+    productname: 'Mango',
+    price: 2.99,
+    stock: 120,
+    location: 'Local Orchard',
+    productdescription: 'Sweet and juicy mangoes',
+    category: 'Fruit',
+    rating: 4.8
+  },
+  {
+    _id: '2',
+    productname: 'Pineapple',
+    price: 1.49,
+    stock: 60,
+    location: 'Tropical Farm',
+    productdescription: 'Tangy and fresh pineapples',
+    category: 'Fruit',
+    rating: 4.5
+  },
+  {
+    _id: '3',
+    productname: 'Cucumber',
+    price: 0.59,
+    stock: 190,
+    location: 'Local Farm',
+    productdescription: 'Crisp and cool cucumbers',
+    category: 'Vegetable',
+    rating: 4.1
+  },
+  {
+    _id: '4',
+    productname: 'Cauliflower',
+    price: 1.35,
+    stock: 110,
+    location: 'Farmers Market',
+    productdescription: 'Fresh and tender cauliflower',
+    category: 'Vegetable',
+    rating: 4.3
+  },
+  {
+    _id: '5',
+    productname: 'Watermelon',
+    price: 1.79,
+    stock: 70,
+    location: 'Local Farm',
+    productdescription: 'Sweet and refreshing watermelons',
+    category: 'Fruit',
+    rating: 4.6
+  },
+  {
+    _id: '6',
+    productname: 'Eggplant',
+    price: 0.99,
+    stock: 130,
+    location: 'Farmers Market',
+    productdescription: 'Rich and flavorful eggplants',
+    category: 'Vegetable',
+    rating: 4.0
+  },
+  {
+    _id: '7',
+    productname: 'Peach',
+    price: 2.29,
+    stock: 80,
+    location: 'Local Orchard',
+    productdescription: 'Juicy and sweet peaches',
+    category: 'Fruit',
+    rating: 4.7
+  },
+  {
+    _id: '8',
+    productname: 'Zucchini',
+    price: 1.79,
+    stock: 100,
+    location: 'Farmers Market',
+    productdescription: 'Fresh and tender zucchinis',
+    category: 'Vegetable',
+    rating: 4.2
+  },
+  {
+    _id: '9',
+    productname: 'Pomegranate',
+    price: 2.49,
+    stock: 50,
+    location: 'Local Farm',
+    productdescription: 'Sweet and tart pomegranates',
+    category: 'Fruit',
+    rating: 4.5
+  },
+  {
+    _id: '10',
+    productname: 'Banana',
+    price: 1.49,
+    stock: 120,
+    location: 'Farmers Market',
+    productdescription: 'Crisp and fresh green beans',
+    category: 'Vegetable',
+    rating: 4.3
+  }
+];
+
+const fruitsAndVegetables_kpkmarket = [
+  {
+    _id: '1',
+    productname: 'Banana',
+    price: 2.99,
+    stock: 120,
+    location: 'Local Orchard',
+    productdescription: 'Sweet and juicy mangoes',
+    category: 'Fruit',
+    rating: 4.8
+  },
+  {
+    _id: '2',
+    productname: 'Pineapple',
+    price: 1.49,
+    stock: 60,
+    location: 'Tropical Farm',
+    productdescription: 'Tangy and fresh pineapples',
+    category: 'Fruit',
+    rating: 4.5
+  },
+  {
+    _id: '3',
+    productname: 'Cucumber',
+    price: 0.59,
+    stock: 190,
+    location: 'Local Farm',
+    productdescription: 'Crisp and cool cucumbers',
+    category: 'Vegetable',
+    rating: 4.1
+  },
+  {
+    _id: '4',
+    productname: 'Cauliflower',
+    price: 1.35,
+    stock: 110,
+    location: 'Farmers Market',
+    productdescription: 'Fresh and tender cauliflower',
+    category: 'Vegetable',
+    rating: 4.3
+  },
+  {
+    _id: '5',
+    productname: 'Watermelon',
+    price: 1.79,
+    stock: 70,
+    location: 'Local Farm',
+    productdescription: 'Sweet and refreshing watermelons',
+    category: 'Fruit',
+    rating: 4.6
+  },
+  {
+    _id: '6',
+    productname: 'Eggplant',
+    price: 0.99,
+    stock: 130,
+    location: 'Farmers Market',
+    productdescription: 'Rich and flavorful eggplants',
+    category: 'Vegetable',
+    rating: 4.0
+  },
+  {
+    _id: '7',
+    productname: 'Peach',
+    price: 2.29,
+    stock: 80,
+    location: 'Local Orchard',
+    productdescription: 'Juicy and sweet peaches',
+    category: 'Fruit',
+    rating: 4.7
+  },
+  {
+    _id: '8',
+    productname: 'Zucchini',
+    price: 1.79,
+    stock: 100,
+    location: 'Farmers Market',
+    productdescription: 'Fresh and tender zucchinis',
+    category: 'Vegetable',
+    rating: 4.2
+  },
+  {
+    _id: '9',
+    productname: 'Pomegranate',
+    price: 2.49,
+    stock: 50,
+    location: 'Local Farm',
+    productdescription: 'Sweet and tart pomegranates',
+    category: 'Fruit',
+    rating: 4.5
+  },
+  {
+    _id: '10',
+    productname: 'Green Beans',
+    price: 1.49,
+    stock: 120,
+    location: 'Farmers Market',
+    productdescription: 'Crisp and fresh green beans',
+    category: 'Vegetable',
+    rating: 4.3
+  }
+];
+
+export default { wines, cocktails, awards, navlinks, profilelinks, sliderimagesdata, fruitsAndVegetables_punjabmarket, fruitsAndVegetables_sindhmarket, fruitsAndVegetables_balochmarket, fruitsAndVegetables_kpkmarket};

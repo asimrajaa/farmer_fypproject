@@ -61,6 +61,11 @@ const Seller_addproducts = ({ onDisableselleraddproduct }) => {
 
         console.warn(productname, location, price, category, stock, productdescription, image, userID);
 
+        if (!productname || !location || !price || !category || !stock || !productdescription || !selectedFile || !userID) {
+            alert("Please fill out the entire form.");
+            return; // Stop the form submission
+        }
+
         e.preventDefault(); //to prevent it from reloading
 
          const formData = new FormData();

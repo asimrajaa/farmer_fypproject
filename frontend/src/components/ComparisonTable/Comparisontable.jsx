@@ -3,20 +3,60 @@ import { data } from "../../constants";
 
 const Comparisontable = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [productDetails, setProductDetails] = useState(null);
+  const [punjabproductDetails, setpunjabProductDetails] = useState(null);
+  const [sindhproductDetails, setsindhProductDetails] = useState(null);
+  const [balochproductDetails, setbalochProductDetails] = useState(null);
+  const [kpkproductDetails, setkpkProductDetails] = useState(null);
   const [databaseproductDetails, setdatabaseProductDetails] = useState(null);
 
   const handleSearch = async  (e) => {
     e.preventDefault();
-    const product = data.fruitsAndVegetables.find(
-      (product) =>
-        product.productname.toLowerCase() === searchTerm.toLowerCase()
+
+    const punjabproduct = data.fruitsAndVegetables_punjabmarket.find(
+      (punjabproduct) =>
+        punjabproduct.productname.toLowerCase() === searchTerm.toLowerCase()
     );
-    if (product) {
-      setProductDetails(product);
+    if (punjabproduct) {
+      setpunjabProductDetails(punjabproduct);
     } else {
       alert("Product not found in other Markets");
-      setProductDetails(null);
+      setpunjabProductDetails(null);
+    }
+
+
+    const sindhproduct = data.fruitsAndVegetables_sindhmarket.find(
+      (sindhproduct) =>
+        sindhproduct.productname.toLowerCase() === searchTerm.toLowerCase()
+    );
+    if (sindhproduct) {
+      setsindhProductDetails(sindhproduct);
+    } else {
+      alert("Product not found in other Markets");
+      setsindhProductDetails(null);
+    }
+
+
+    const balochproduct = data.fruitsAndVegetables_balochmarket.find(
+      (balochproduct) =>
+        balochproduct.productname.toLowerCase() === searchTerm.toLowerCase()
+    );
+    if (balochproduct) {
+      setbalochProductDetails(balochproduct);
+    } else {
+      alert("Product not found in other Markets");
+      setbalochProductDetails(null);
+    }
+
+
+    const kpkproduct = data.fruitsAndVegetables_kpkmarket.find(
+      (kpkproduct) =>
+        kpkproduct.productname.toLowerCase() === searchTerm.toLowerCase()
+    );
+    if (sindhproduct) {
+      setkpkProductDetails(kpkproduct);
+    } else {
+      alert("Product not found in other Markets");
+      setkpkProductDetails(null);
     }
 
 
@@ -82,7 +122,7 @@ const Comparisontable = () => {
         <br>
         </br>
       <div>
-        {productDetails && databaseproductDetails && (
+        {punjabproductDetails && databaseproductDetails && (
           <div className="flex flex-col md:flex-row gap-3">
             {/* <!-- Right side: Profile form --> */}
             <div className=" w-full  bg-white p-4 rounded-lg">
@@ -105,7 +145,25 @@ const Comparisontable = () => {
                           scope="col"
                           class="px-6 py-3 bg-gray-50 dark:bg-gray-800"
                         >
-                          Other Markets
+                          Punjab Markets
+                        </th>
+                        <th
+                          scope="col"
+                          class="px-6 py-3 bg-gray-50 dark:bg-gray-800"
+                        >
+                          Sindh Markets
+                        </th>
+                        <th
+                          scope="col"
+                          class="px-6 py-3 bg-gray-50 dark:bg-gray-800"
+                        >
+                          Baloch Markets
+                        </th>
+                        <th
+                          scope="col"
+                          class="px-6 py-3 bg-gray-50 dark:bg-gray-800"
+                        >
+                          KPK Markets
                         </th>
                       </tr>
                     </thead>
@@ -119,7 +177,16 @@ const Comparisontable = () => {
                         </th>
                         <td class="px-6 py-4">{databaseproductDetails.productname}</td>
                         <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
-                          {productDetails.productname}
+                          {punjabproductDetails.productname}
+                        </td>
+                        <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                          {sindhproductDetails.productname}
+                        </td>
+                        <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                          {balochproductDetails.productname}
+                        </td>
+                        <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                          {kpkproductDetails.productname}
                         </td>
                       </tr>
                       {/* <!-- Add more rows for other products --> */}
@@ -133,7 +200,16 @@ const Comparisontable = () => {
                         </th>
                         <td class="px-6 py-4">{databaseproductDetails.price}</td>
                         <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
-                        {productDetails.price}
+                        {punjabproductDetails.price}
+                        </td>
+                        <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                        {sindhproductDetails.price}
+                        </td>
+                        <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                        {balochproductDetails.price}
+                        </td>
+                        <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                        {kpkproductDetails.price}
                         </td>
                       </tr>
 
@@ -146,7 +222,16 @@ const Comparisontable = () => {
                         </th>
                         <td class="px-6 py-4">{databaseproductDetails.stock}</td>
                         <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
-                        {productDetails.stock}
+                        {punjabproductDetails.stock}
+                        </td>
+                        <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                        {sindhproductDetails.stock}
+                        </td>
+                        <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                        {balochproductDetails.stock}
+                        </td>
+                        <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                        {kpkproductDetails.stock}
                         </td>
                       </tr>
 
@@ -159,7 +244,16 @@ const Comparisontable = () => {
                         </th>
                         <td class="px-6 py-4">{databaseproductDetails.location}</td>
                         <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
-                        {productDetails.location}
+                        {punjabproductDetails.location}
+                        </td>
+                        <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                        {sindhproductDetails.location}
+                        </td>
+                        <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                        {balochproductDetails.location}
+                        </td>
+                        <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                        {kpkproductDetails.location}
                         </td>
                       </tr>
 
@@ -172,7 +266,16 @@ const Comparisontable = () => {
                         </th>
                         <td class="px-6 py-4">{databaseproductDetails.productdescription}</td>
                         <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
-                        {productDetails.productdescription}
+                        {punjabproductDetails.productdescription}
+                        </td>
+                        <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                        {sindhproductDetails.productdescription}
+                        </td>
+                        <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                        {balochproductDetails.productdescription}
+                        </td>
+                        <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                        {kpkproductDetails.productdescription}
                         </td>
                       </tr>
 
@@ -185,7 +288,16 @@ const Comparisontable = () => {
                         </th>
                         <td class="px-6 py-4">{databaseproductDetails.rating}</td>
                         <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
-                        {productDetails.rating}
+                        {punjabproductDetails.rating}
+                        </td>
+                        <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                        {sindhproductDetails.rating}
+                        </td>
+                        <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                        {balochproductDetails.rating}
+                        </td>
+                        <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                        {kpkproductDetails.rating}
                         </td>
                       </tr>
                     </tbody>
