@@ -33,7 +33,7 @@ const Payment_Details = ({handledetail}) => {
         </div>
        
             {showPaymentOptions && <Paymentoptions onDisable={handlePaymentOptionsDisable} />}
-            {!showPaymentOptions && <Easypaisa />}
+            {!showPaymentOptions && <Easypaisa  closemodalbutton= {closebutton}/>}
 
 
 

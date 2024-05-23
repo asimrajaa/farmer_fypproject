@@ -16,22 +16,30 @@ const Signin = () => {
 
     const accountlogin = async () => {
         console.warn(email, password);
+        try {
+
+            let fetchapi = await fetch('http://localhost:3000/login', {
+                method: "POST",
+                body: JSON.stringify({ email, password }),
+                headers: { 'Content-Type': 'application/json' },
+            });
+        
+            fetchapi = await fetchapi.json();
+        
+            console.warn(fetchapi);
+            if (fetchapi.email) {
+                localStorage.setItem("user", JSON.stringify(fetchapi));
+                navigate('/home');
+            } else {
+                alert("Please enter correct credentials");
+            }
+          
+          } catch (error) {
+            
+            alert("Error: Login failed");
+          } 
     
-        let fetchapi = await fetch('http://localhost:3000/login', {
-            method: "POST",
-            body: JSON.stringify({ email, password }),
-            headers: { 'Content-Type': 'application/json' },
-        });
-    
-        fetchapi = await fetchapi.json();
-    
-        console.warn(fetchapi);
-        if (fetchapi.email) {
-            localStorage.setItem("user", JSON.stringify(fetchapi));
-            navigate('/home');
-        } else {
-            alert("Please enter correct credentials");
-        }
+      
     }
     return (
         <>

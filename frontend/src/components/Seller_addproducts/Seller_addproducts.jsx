@@ -108,6 +108,7 @@ const Seller_addproducts = ({ onDisableselleraddproduct }) => {
 
 
             console.log('Image sent successfully');
+            onDisableselleraddproduct(); 
             alert("Product Added Successfully");
 
             } else {

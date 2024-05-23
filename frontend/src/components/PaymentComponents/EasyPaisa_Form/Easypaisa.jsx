@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios';
 
-const Easypaisa = () => {
+const Easypaisa = ({ closemodalbutton }) => {
 
 
 
@@ -22,6 +22,7 @@ const Easypaisa = () => {
             status: 'bought'
           });
           console.log('API Response:', response.data);
+          closemodalbutton();
           alert("Product bought, Check Status on Phone ");
           // Handle success response
         } catch (error) {
