@@ -21,10 +21,10 @@ const About = () => {
     <div className=" flex justify-center content-centeritems-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div className=" lg:ml-40 font-light text-gray-500 sm:text-lg dark:text-gray-400">
             <h2 className="mb-4 text-4xl text-center tracking-tight font-extrabold text-gray-900 dark:text-white">OUR MISSION</h2>
-            <p className="mb-4">At FARMER, our mission is to empower farmers with the tools, knowledge, and resources they need to thrive. We are dedicated to fostering agricultural prosperity, sustainability, and innovation. We strive to create a community where farmers can connect, learn, and access quality products easily. Together, we are sowing the seeds of a brighter, more bountiful future for agriculture.</p>
+            <p className="mb-4">At Kisan Mandi, our mission is to empower farmers with the tools, knowledge, and resources they need to thrive. We are dedicated to fostering agricultural prosperity, sustainability, and innovation. We strive to create a community where farmers can connect, learn, and access quality products easily. Together, we are sowing the seeds of a brighter, more bountiful future for agriculture.</p>
         </div>
         <div className="grid grid-cols-2 gap-4 mt-8">
-            <img className="w-full rounded-lg" src={images.farmer_text} alt="office content 1"></img>
+            <img className="w-full rounded-lg" src={images.farmer_image} alt="office content 1"></img>
             {/* <img className="mt-4 w-full lg:mt-10 rounded-lg" src={images.bringing} alt="office content 2"></img> */}
         </div>
     </div>

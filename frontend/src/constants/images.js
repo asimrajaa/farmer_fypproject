@@ -14,6 +14,7 @@ import bank from '../assets/bank.png';
 import profile from '../assets/profile.png';
 
 
+
 export default {
 
   farmer_image,
