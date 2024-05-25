@@ -446,7 +446,7 @@ app.post("/authenticate", async (req, res) => {
         secret: username,
       },
       {
-        headers: { "private-key": "85a868a3-0731-402a-b6ef-984a5969e43f" },
+        headers: { "private-key": "97ebaa86-c740-4091-bd51-6163955032cf" },
       }
     );
     console.log("reponse is: " + response);
