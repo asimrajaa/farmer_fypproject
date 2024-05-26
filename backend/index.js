@@ -221,6 +221,7 @@ app.post("/send-email", (req, res) => {
   });
 });
 
+
 // Get all products route
 app.get("/products", async (req, res) => {
   try {
