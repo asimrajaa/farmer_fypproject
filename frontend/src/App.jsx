@@ -16,7 +16,8 @@ import {
   Admin,
   Chatsystem,
   Weather,
-  Comparison
+  Comparison,
+  Updateproduct
 } from "./pages";
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/" element={<Layout />}>
             <Route element={<PrivateComponent />}>
               <Route path="/seller" element={<Seller />}></Route>
+              <Route path="/updateproduct" element={<Updateproduct/>}></Route>
               <Route path="/buyer" element={<Buyer />}></Route>
               <Route path="/chat" element={<Chatsystem />}></Route>
               <Route path="/contact" element={<Contact />}></Route>

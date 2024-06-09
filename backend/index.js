@@ -142,6 +142,38 @@ app.get("/users/:id", async (req, res) => {
   }
 });
 
+
+
+app.put("/updateusers/:id", async (req, res) => {
+  try {
+    const userId = req.params.id;
+    const userDataToUpdate = req.body; // Assuming the updated user data is sent in the request body
+
+    const user = await User.findById(userId);
+
+    if (!user) {
+      return res.status(404).send("User not found");
+    }
+
+    // Update the user data with the new information
+    user.name= userDataToUpdate.name;
+    user.email= userDataToUpdate.email;
+    user.address = userDataToUpdate.address;
+    user.phoneNumber= userDataToUpdate.phoneNumber;
+    // Add more fields as needed
+
+    // Save the updated user data
+    await user.save();
+
+    res.status(200).json(user);
+  } catch (error) {
+    console.error("Error updating user:", error);
+    res.status(500).send("Error updating user");
+  }
+});
+
+
+
 app.delete("/deleteuser/:id", async (req, res) => {
   try {
     const userId = req.params.id;
@@ -187,6 +219,36 @@ app.get("/productsearchid/:id", async (req, res) => {
   } catch (error) {
     console.error("Error fetching product:", error);
     res.status(500).send("Error fetching product");
+  }
+});
+
+//update product
+app.put("/updateproduct/:id", async (req, res) => {
+  try {
+    const productId = req.params.id;
+    const productDataToUpdate = req.body; // Assuming the updated product data is sent in the request body
+
+    const product = await Product.findById(productId);
+
+    if (!product) {
+      return res.status(404).send("Product not found");
+    }
+
+    // Update the product data with the new information
+    product.productname = productDataToUpdate.productname;
+    product.price = productDataToUpdate.productprice;
+    product.stock = productDataToUpdate.productstock;
+    product.productdescription = productDataToUpdate.productdescription;
+    product.location = productDataToUpdate.productlocation;
+    product.category = productDataToUpdate.productcategory;
+
+    // Save the updated product data
+    await product.save();
+
+    res.status(200).json(product);
+  } catch (error) {
+    console.error("Error updating product:", error);
+    res.status(500).send("Error updating product");
   }
 });
 
@@ -447,7 +509,7 @@ app.post("/authenticate", async (req, res) => {
         secret: username,
       },
       {
-        headers: { "private-key": "97ebaa86-c740-4091-bd51-6163955032cf" },
+        headers: { "private-key": "bf56a1b5-cb75-4b1a-8995-bcd4679b2e4f" },
       }
     );
     console.log("reponse is: " + response);

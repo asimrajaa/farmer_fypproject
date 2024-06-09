@@ -2,8 +2,11 @@ import { React, useState, useEffect } from "react";
 import { images } from "../../constants";
 import { Productdetails } from "../../components";
 import { Rating } from "@mui/material";
+import { useNavigate } from 'react-router-dom';
 
 const Seller_myproductcard = (props) => {
+
+  const navigate = useNavigate();
   const [showDetails, setShowDetails] = useState(false);
 
   const { product } = props;
@@ -44,6 +47,29 @@ const Seller_myproductcard = (props) => {
     }
 
 }
+
+
+
+
+
+const handleUpdateClick = () => {
+
+
+  console.log
+
+  navigate('/updateproduct', {
+    state: {
+      productid: product._id, 
+      productname: product.productname,
+      productprice: product.price,
+      productstock: product.stock,
+      productdescription: product.productdescription,
+      productlocation: product.location,
+      productcategory: product.category
+    }
+  });
+};
+
 
   return (
     <div>
@@ -87,6 +113,14 @@ const Seller_myproductcard = (props) => {
               className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
             >
               Check Details
+            </button>
+          </div>
+          <div className="flex justify-center mt-4 space-x-4">
+            <button
+              onClick={handleUpdateClick}
+              className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            >
+              Update Details
             </button>
           </div>
           <div className="flex justify-center mt-1 space-x-4">
