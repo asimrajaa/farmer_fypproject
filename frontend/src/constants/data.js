@@ -668,7 +668,18 @@ const fruitsAndVegetables_kpkmarket = [
     productdescription: 'Creamy and ripe avocados',
     category: 'Fruit',
     rating: 4.6
+  },
+  {
+    _id: '30',
+    productname: 'Mango',
+    price: 12.89,
+    stock: 60,
+    location: 'Tropical Farm',
+    productdescription: 'Juicy Mangoes',
+    category: 'Fruit',
+    rating: 4.3
   }
+
 
 ];
 
